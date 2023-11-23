@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charle's Portfolio</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+            }
+            .hero{
+                height: 22vh;
+                width: 100%; 
+                background-color: skyblue;                
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 45px;
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+            .logo{
+                color: rgb(3, 24, 24);
+                font-size: 35px;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+            span{
+                color: brown;
+            }
+            nav ul li{
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px 25px;                
+            }
+            nav ul li a{
+                position: relative;
+                font-size: 18px;
+                text-decoration: none;                 
+                color: rgb(55, 55, 100);
+                text-align: none;
+                font-weight: bold;
+                text-transform: capitalize;
+            }                       
+            .about{
+                width: 100%;
+                padding: 100px 0px;
+                background-color: #f0e7e7;
+            }
+            .about img{
+                height: auto;
+                width: 430px;
+            }
+            .about-text{
+                width: 550px;                
+            }
+            .main{
+                width: 1130px;
+                max-width: 95%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .about-text h2{
+                color: blue;
+                font-size: 75px;
+                margin-bottom: 20px;
+            }
+            .about-text h5{
+                color:rgb(3, 24, 24);
+                letter-spacing: 2px;
+                font-size: 22px;
+                margin-bottom: 25px;
+                text-transform: capitalize;
+            }
+            .about-text p{
+                color: rgb(59, 51, 51);
+                letter-spacing: 1px;
+                line-height: 28px;
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+            button{
+                background-color: grey;
+                color: white; 
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 13px 30px;
+                border-radius: 30px;                 
+            }
+            .work{
+                background: white;                 
+                width: 100%;
+                padding: 100px 0px;
+            }
+            .title h2{
+                color: blue;
+                font-size: 75px;
+                width: 1130px;
+                margin: 30px auto;
+                text-align: center;
+            }
+            .box{
+                display: flex;                 
+                justify-content: center;
+                align-items: center;
+                min-height: 400px;
+            }
+            .card{
+                height: 365px;
+                width: 335px;
+                padding: 20px 35px;
+                background: rgb(88, 155, 124);
+                border-radius: 20px;
+                margin: 15px;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+            }        
+            h5{
+                color: rgb(79, 28, 138);
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            .pra p{
+                color: rgba(39, 5, 39, 0.8);
+                font-size: 16px;
+                line-height: 27px;
+                margin-bottom: 25px;
+            }
+            .card .button{
+                background-color: rgb(65, 64, 64);
+                color: white; 
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 9px 22px;
+                border-radius: 30px;
+            }
+            .resume{
+                position: relative;
+                width: 100;
+                height: 10vh;
+                background-color: antiquewhite;
+            }
+            .contact-me{
+                width: 100%;
+                height: 290px;
+                background: gainsboro;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .contact-me p{
+                color: #191919;
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+            .contact-me .button-two{
+                background-color: grey;
+                color: white; 
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 9px 22px;
+                border-radius: 30px;
+            }
+            footer{
+                position: relative;
+                width: 100%;
+                height: 50px;
+                background: #101010;                 
+                align-items: center;
+                justify-content: center;
+            }           
+            .end{
+                position: absolute;
+                color: #f9004d;
+                bottom: 35px;
+                top: 15px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--the navbar section starts-->
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Cha<span>rles</span></h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>            
+        </div>       
+        <!--the about me section begins-->
+        <section class="about">
+            <div class="main">   
+                <img src="C:\Users\User\OneDrive\Desktop\charles22.jpg" alt="Charles">    
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>A full-stack developer</h5>
+                    <p>I am a full-stack developer. I can provide clean code. I also make the website more interactive with web animations. 
+                    A responsive design makes your website accessible to all users, regardless of their device.</p>
+                    <button type="button">Let's talk</button>
+                </div>  
+            </div>                              
+        </section>
+        <!--Work sections is now getting started-->
+        <section class="work">
+            <div class="title">
+                <h2>Work Services</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <h5>Web Development</h5>
+                    <div class="pra">
+                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices.
+                            Secondly, it needs to load fast. </p>
+                        <p style="text-align: center;">
+                          <a class="button" href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>                            
+                <div class="card">
+                    <h5>UI and UX Design</h5>
+                    <div class="pra">
+                        <p>I will add aesthetic elements of design to provide visually appealing digital solutions. I will also look into 
+                            the user interactions with your company, focus on creating seamless, and easy-to-navigate interfaces for an 
+                            optimized user journey.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                              </p>
+                    </div>
+                </div>             
+                <div class="card">
+                    <h5>SEO Expert</h5>
+                    <div class="pra">
+                        <p>I build the digital highway to your company to drive the traffic to your website and turn the traffic into leads.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                          </p>
+                    </div>
+                </div>   
+            </div>                  
+        </section>
+        <!--The resume section now next-->
+        <section class="resume">
+            <div class="title">
+                <h2>Resume</h2>
+            </div>             
+            <p style="font-size: 40px;">Here's my resume</p>
+        </section>
+        <!--contact me section starting-->
+        <section class="contact">
+            <div class="contact-me">
+                <form>   
+                    <label>Name:</label>                  
+                    <input type="text" name="first name" placeholder="Type your name here"> <br> 
+                    <label>Email:</label>                
+                    <input type="email" name="email" placeholder="Type your email here">   <br>             
+                                       
+                </form>                 
+                <p>Let me get you a beautiful website</p>
+                <a class="button-two" href="#">Hire Me</a>
+            </div>             
+        </section>
+        <div style="display: flex; align="center">
+            <p style="font-size: 50px;">Here are videos of my work</p>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+            </iframe>
+        </div>
+        <footer>
+            <p class="end">@2023 Copyright by Charles Kimotho</p>
+        </footer>    
+    </body>
+</html>
