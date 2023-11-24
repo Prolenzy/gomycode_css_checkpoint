@@ -91,7 +91,8 @@
                 border: 2px solid transparent;
                 font-weight: bold;
                 padding: 13px 30px;
-                border-radius: 30px;                 
+                border-radius: 30px;  
+                font-size: larger;               
             }
             .work{
                 background: white;                 
@@ -145,32 +146,65 @@
             .resume{
                 position: relative;
                 width: 100;
-                height: 10vh;
+                height: 15vh;
                 background-color: antiquewhite;
-            }
-            .contact-me{
-                width: 100%;
-                height: 290px;
-                background: gainsboro;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+            }            
+            .container{  
+                position: relative;   
+                 
                 justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 20px 100px;                       
+
             }
-            .contact-me p{
-                color: #191919;
-                font-size: 30px;
-                font-weight: bold;
-                margin-bottom: 25px;
+            .contact-box{
+                max-width: 850px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: #fff;
             }
-            .contact-me .button-two{
-                background-color: grey;
-                color: white; 
-                text-decoration: none;
-                border: 2px solid transparent;
-                font-weight: bold;
-                padding: 9px 22px;
-                border-radius: 30px;
+            .left{
+                height: 100%;
+                
+            }
+            .right{
+                padding: 25px 40px;
+            }
+            h2:after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                height: 4px;
+                width: 50px;
+                border-radius: 2px;
+                background-color: #2ecc71;
+            }
+            .field{
+                width: 100%;
+                padding: 0.5rem 1rem;
+                outline: none;
+                border: 2px solid rgba(0, 0, 0, 0);
+                font-size: 1.1rem;
+                background-color: rgba(230, 230, 230, 0.6);
+                margin-top: 22px;
+            }
+            .area{
+                min-height: 150px;
+            }
+            .btn{
+                width: 100%;
+                padding: 0.5rem 1rem;
+                font-size: 1.5rem;
+                background-color: #2ecc71;
+                outline: none;
+                border: none;
             }
             footer{
                 position: relative;
@@ -181,11 +215,14 @@
                 justify-content: center;
             }           
             .end{
-                position: absolute;
-                color: #f9004d;
+                 position: relative;
+                align-items: center;
+                justify-content: center;
+                color: #f5ecef;
                 bottom: 35px;
                 top: 15px;
                 font-size: 14px;
+                text-align: center;
             }
         </style>
     </head>
@@ -206,7 +243,7 @@
         <!--the about me section begins-->
         <section class="about">
             <div class="main">   
-                <img src="C:\Users\User\OneDrive\Desktop\charles22.jpg" alt="Charles">    
+                <img src="C:\Users\User\Downloads\charles22-removebg-preview.png" alt="Charles">    
                 <div class="about-text">
                     <h2>About Me</h2>
                     <h5>A full-stack developer</h5>
@@ -255,31 +292,45 @@
             </div>                  
         </section>
         <!--The resume section now next-->
-        <section class="resume">
-            <div class="title">
-                <h2>Resume</h2>
-            </div>             
-            <p style="font-size: 40px;">Here's my resume</p>
+        <section class="about">
+            <div class="main">                       
+                <div class="about-text">
+                    <h2>Resume</h2>
+                    <h5>Resume Summary</h5>
+                    <p>An energetic and purpose-driven full-stack developer with 5 years experience providing a clean code.                     
+                    I believe a responsive design should make your website accessible to all users, regardless of their device.</p>                    
+                </div>  
+                <img src="C:\Users\User\Downloads\00002-Resume (1)_page-0001.jpg" alt="my resume">
+            </div>                              
         </section>
+        <div class="about">
+            <div class="main">  
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+                </iframe>                     
+                <div class="about-text">
+                    <h5>A Brief Video of My Web Development Presentation</h5>                     
+                    <p>In a latest tech event held in Nairobi, I participated in a full-stack developer's contest and here is my presentation in full. 
+                    </p>                     
+                </div>  
+            </div>                              
+        </div> 
         <!--contact me section starting-->
-        <section class="contact">
-            <div class="contact-me">
-                <form>   
-                    <label>Name:</label>                  
-                    <input type="text" name="first name" placeholder="Type your name here"> <br> 
-                    <label>Email:</label>                
-                    <input type="email" name="email" placeholder="Type your email here">   <br>             
-                                       
-                </form>                 
-                <p>Let me get you a beautiful website</p>
-                <a class="button-two" href="#">Hire Me</a>
-            </div>             
+        <section class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">  
+                    <h2>Contact Us</h2>       
+                                   
+                    <input type="text" class="field" placeholder="Type your name here"> 
+                                  
+                    <input type="email" class="field" placeholder="Type your email here">   
+                    <input type="text" class="field" placeholder="Type your phone number here"> 
+                    <textarea class="field area" placeholder="Message"></textarea> 
+                    <button class="btn">Send</button>         
+                </div>
+                </div>                              
         </section>
-        <div style="display: flex; align="center">
-            <p style="font-size: 50px;">Here are videos of my work</p>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-            </iframe>
-        </div>
+                
         <footer>
             <p class="end">@2023 Copyright by Charles Kimotho</p>
         </footer>    
