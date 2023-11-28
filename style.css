@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+.hero{
+    height: 22vh;
+    width: 100%; 
+    background-color: skyblue;                
+}
+nav{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: rgb(3, 24, 24);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: brown;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;                
+}
+nav ul li a{
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;                 
+    color: rgb(55, 55, 100);
+    text-align: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}                       
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #f0e7e7;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;                
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: blue;
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:rgb(3, 24, 24);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: rgb(59, 51, 51);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: grey;
+    color: white; 
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;  
+    font-size: larger;               
+}
+.work{
+    background: white;                 
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: blue;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;                 
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(88, 155, 124);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}        
+h5{
+    color: rgb(79, 28, 138);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: rgba(39, 5, 39, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: rgb(65, 64, 64);
+    color: white; 
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+}
+.resume{
+    position: relative;
+    width: 100;
+    height: 15vh;
+    background-color: antiquewhite;
+}            
+.container{  
+    position: relative;   
+     
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;                       
+
+}
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+.left{
+    height: 100%;
+    
+}
+.right{
+    padding: 25px 40px;
+}
+h2:after{                 
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-size: 1.1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    margin-top: 22px;
+}
+.area{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #2ecc71;
+    outline: none;
+    border: none;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #101010;                 
+    align-items: center;
+    justify-content: center;
+}           
+.end{
+     position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #f5ecef;
+    bottom: 35px;
+    top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
