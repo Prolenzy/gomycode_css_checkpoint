@@ -4,18 +4,23 @@
     font-family: Roboto;
     box-sizing: border-box;
 }
-.hero{
+.hero {
     height: 22vh;
     width: 100%; 
     background-color: skyblue;                
 }
-nav{
-    display: inlineg;
-    align-items: center;
-    justify-content: space-between;
+.hero nav h2 {
+    margin-right: 380px;
+}
+nav {
+     
+     
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
+}
+nav h2, nav ul {
+    display: inline;
 }
 .logo{
     color: rgb(3, 24, 24);
